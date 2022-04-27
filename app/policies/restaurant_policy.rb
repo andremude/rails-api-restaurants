@@ -5,15 +5,31 @@ class RestaurantPolicy < ApplicationPolicy
     end
   end
 
+  def index?
+    true
+  end
+
   def show?
     true
   end
 
+  # def update?
+  #   true
+  # end
+
+  # def destroy?
+  #   true
+  # end
+
   def update?
-    true
+    record.user == user
+  end
+
+  def create?
+    user.present?
   end
 
   def destroy?
-    true
+    update?
   end
 end
