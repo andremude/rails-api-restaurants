@@ -13,14 +13,6 @@ class RestaurantPolicy < ApplicationPolicy
     true
   end
 
-  # def update?
-  #   true
-  # end
-
-  # def destroy?
-  #   true
-  # end
-
   def update?
     record.user == user
   end
