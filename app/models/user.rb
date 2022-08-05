@@ -1,7 +1,6 @@
 class User < ApplicationRecord
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-  acts_as_token_authenticatable
-  has_many :restaurants, dependent: :destroy
-  has_many :comments, dependent: :destroy
+  has_secure_password
+  has_many :restaurants
+
+  validates :username, presence: true, uniqueness: { case_sensitive: false }
 end
