@@ -43,7 +43,7 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
   end
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :address)
+    params.require(:restaurant).permit(:name, :address, :description)
   end
 
   def render_error
