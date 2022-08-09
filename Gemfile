@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'pundit'
 
+gem 'devise'
+
 gem 'rack-cors', '~> 0.3.1'
 
 gem 'autoprefixer-rails', '10.2.5'
