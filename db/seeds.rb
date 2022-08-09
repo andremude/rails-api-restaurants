@@ -34,37 +34,37 @@
 
 # user2.save
 
-users = [{ username: "andresm", password: "123456" },
-         { username: "johnp", password: "123456" }]
+# users = [{ username: "andresm", password: "123456" },
+#          { username: "johnp", password: "123456" }]
 
-restaurants = [ { name: "Isolina", address: "Av. San Martín 101, Barranco", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Maido", address: "Calle San Martín 399, Miraflores", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Statera", address: "Av. Mariscal La Mar 463, Miraflores", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Mayta", address: "Av. Mariscal La Mar 1285, Miraflores", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Pescados Capitales", address: "Av. Mariscal La Mar 1337, Miraflores", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Panchita", address: "Calle 2 de Mayo 298, Miraflores", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Nanka", address: "Calle Manuel Bañón 260, San Isidro", description: "Lorem Ipsum", user_id: 1 },
-                { name: "Al Toke Pez", address: "Av. Angamos Este 886, Surquillo", description: "Lorem Ipsum", user_id: 2 },
-                { name: "Bar Queirolo", address: "Jr. Camana 900, Cercado de Lima", description: "Lorem Ipsum", user_id: 2 },
-                { name: "Carnal Prime Steakhouse", address: "Calle Elias Aguirre 698, Miraflores", description: "Lorem Ipsum", user_id: 2 },
-                { name: "La Mar Cevichería Peruana", address: "Av. Mariscal La Mar 770, Miraflores", description: "Lorem Ipsum", user_id: 2 },
-                { name: "Central", address: "Av. Pedro de Osma 301, Barranco", description: "Lorem Ipsum", user_id: 2 },
-                { name: "Chifa Unión", address: "Jr. Unión 126, Barranco", description: "Lorem Ipsum", user_id: 2 },
-                { name: "Astrid & Gastón", address: "Av. Paz Soldán 290, San Isidro", description: "Lorem Ipsum", user_id: 2 }]
+# restaurants = [ { name: "Isolina", address: "Av. San Martín 101, Barranco", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Maido", address: "Calle San Martín 399, Miraflores", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Statera", address: "Av. Mariscal La Mar 463, Miraflores", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Mayta", address: "Av. Mariscal La Mar 1285, Miraflores", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Pescados Capitales", address: "Av. Mariscal La Mar 1337, Miraflores", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Panchita", address: "Calle 2 de Mayo 298, Miraflores", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Nanka", address: "Calle Manuel Bañón 260, San Isidro", description: "Lorem Ipsum", user_id: 1 },
+#                 { name: "Al Toke Pez", address: "Av. Angamos Este 886, Surquillo", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "Bar Queirolo", address: "Jr. Camana 900, Cercado de Lima", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "Carnal Prime Steakhouse", address: "Calle Elias Aguirre 698, Miraflores", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "La Mar Cevichería Peruana", address: "Av. Mariscal La Mar 770, Miraflores", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "Central", address: "Av. Pedro de Osma 301, Barranco", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "Chifa Unión", address: "Jr. Unión 126, Barranco", description: "Lorem Ipsum", user_id: 2 },
+#                 { name: "Astrid & Gastón", address: "Av. Paz Soldán 290, San Isidro", description: "Lorem Ipsum", user_id: 2 }]
 
-puts '------------Users------------'
+# puts '------------Users------------'
 
-users.each do |attributes|
-  user = User.create!(attributes)
-  puts "Created #{user.username}"
-end
+# users.each do |attributes|
+#   user = User.create!(attributes)
+#   puts "Created #{user.username}"
+# end
 
 
-puts '------------Restaurants------------'
+# puts '------------Restaurants------------'
 
-restaurants.each do |attributes|
-  restaurant = Restaurant.create!(attributes)
-  puts "Created #{restaurant.name}"
-end
+# restaurants.each do |attributes|
+#   restaurant = Restaurant.create!(attributes)
+#   puts "Created #{restaurant.name}"
+# end
 
-puts 'Finished!'
+# puts 'Finished!'

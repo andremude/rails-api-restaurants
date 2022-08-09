@@ -1,6 +1,9 @@
 class User < ApplicationRecord
-  has_secure_password
-  has_many :restaurants
-
-  validates :username, presence: true, uniqueness: { case_sensitive: false }
+  acts_as_token_authenticatable
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_many :restaurants, dependent: :destroy
+  has_many :comments, dependent: :destroy
 end
