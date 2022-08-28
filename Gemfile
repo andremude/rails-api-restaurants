@@ -36,6 +36,7 @@ gem 'simple_token_authentication'
 
 gem 'rack-cors', '~> 0.3.1'
 
+
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
@@ -60,6 +61,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+  gem 'rspec-rails', '~> 4.1.0'
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
