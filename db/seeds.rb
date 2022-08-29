@@ -23,7 +23,7 @@ restaurant10 = user.restaurants.find_or_initialize_by(name: "Carnal Prime Steakh
 
 user.save
 
-user2 = User.find_or_initialize_by(email: 'juan@gmail.com')
+user2 = User.find_or_initialize_by(email: 'john@example.com')
 user2.password = '123456'
 user2.password_confirmation = '123456'
 
@@ -33,6 +33,12 @@ restaurant3 = user2.restaurants.find_or_initialize_by(name: "Chifa Unión", addr
 restaurant4 = user2.restaurants.find_or_initialize_by(name: "Astrid & Gastón", address: "Av. Paz Soldán 290, San Isidro")
 
 user2.save
+
+user3 = User.find_or_initialize_by(email: 'example@example.com')
+user3.password = '123456'
+user3.password_confirmation = '123456'
+
+user3.save
 
 # users = [{ username: "andresm", password: "123456" },
 #          { username: "johnp", password: "123456" }]
