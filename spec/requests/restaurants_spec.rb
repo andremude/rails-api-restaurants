@@ -36,24 +36,6 @@ RSpec.describe '/restaurants', type: :request do
       get api_v1_restaurant_path(restaurant)
       expect(response).to be_successful
     end
-  end
-
-  # describe 'GET /new' do
-  #   it 'renders a successful response' do
-  #     get api_v1_restaurant_path
-  #     expect(response).to be_successful
-  #   end
-  # end
-
-  # describe 'GET /edit' do
-  #   it 'render a successful response' do
-  #     restaurant = Restaurant.new(valid_attributes)
-  #     restaurant.user = current_user
-  #     restaurant.save
-  #     get api_v1_restaurant_path(restaurant)
-  #     expect(response).to be_successful
-  #   end
-  # end
 
   describe 'POST /create' do
     context 'with valid parameters' do
